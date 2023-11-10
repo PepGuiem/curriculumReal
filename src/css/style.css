@@ -1,0 +1,327 @@
+
+
+/*Valores generales*/
+*{
+    color: #000;
+    font-family: Lalezar, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+
+/*Variables*/
+:root{
+    --networks-color: #D9D9D9;
+}
+
+
+/*Estilos del body y el backgrounf*/
+body{
+    background: linear-gradient(90deg, #CC8652, #BF611C, #BF611C 100%);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.div-wall{
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(180deg, #6D6F69 0%, #A69A9A 100%);
+}
+
+.div-principal{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/*Contenido dentro del body. Primera vista del usuario*/
+.div-content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.networks{
+    height: 100%;
+    width: 15%;
+    text-align: center;
+}
+
+.game{
+    width: 50%;
+    height: 100%;
+}
+
+.lamp-content1{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*-------NETWORKS------*/
+.dropdown{
+    margin-top: 50%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-button{
+    width: 60px;
+    height: 60px;
+    margin-top: 60%;
+    position: relative;
+    display: inline-block;
+    background-color: var(--networks-color);
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 10;
+}
+
+#networks-button{
+    margin-top: 4px;
+    padding: 7px;
+    border: 0px solid var(--networks-color);
+    background-color: var(--networks-color);
+    border-radius: 50%;
+}
+.dropdown-content {
+    padding-top: 35px;
+    display: block;
+    height: 0;
+    position: absolute;
+    background-color: var(--networks-color);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin-top: -35px;
+    z-index: 1;
+    transition: height 0.5s ease-in;
+}
+
+.dropdown-content img{
+    height: 0;
+    width: 70%;
+    opacity: 0;
+}
+
+.dropdown .dropdown-content.active {
+    text-align: center;
+    height: 170%;
+    display: block;
+    transition: height 0.5s ease-out;
+    border: 2px solid black ;
+}
+
+.dropdown-content.active  a img{
+    opacity: 1;
+    height: 70%;
+    transition: opacity 1s ease-in-out;
+}
+
+.dropdown-content a {
+    text-align: center;
+    color: #333;
+    padding: 5px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #706d6d9d;
+}
+
+/*---------GAME---------*/
+
+.svg-tv{
+    margin-top: auto;
+}
+
+.div-tv{
+    width: 60%;
+    transition: width 0.5s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.tv{
+    width: 80%;
+    height: 35%;
+    transition: height 0.5s ease-in-out;
+    background-color: var(--networks-color);
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: -40px 0px 0px #4D4B4B;
+    display: flex;
+}
+
+.screen{
+    margin-top: 4%;
+    margin-left: 4%;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-image: url(/src/img/dungeon.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.button-play{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 4px 30px;
+    border-radius: 10px;
+    background-color: rgb(75, 160, 194);
+    border: 2px solid rgb(46, 98, 119);
+}
+
+.button-play:hover{
+    background-color: rgba(13, 59, 102, 0.795);
+    color: white;
+}
+
+/*----------LAMP----------*/
+.light{
+    border: yellow 3px solid;
+    margin-top: -7px;
+    background-color: rgba(251, 255, 4, 0.685);
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.light p{
+    padding: 1%;
+    font-size: 70%;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.light img{
+    margin-top: 3%;
+}
+
+.lamp-responsive{
+    display: none;
+}
+
+i{
+    font-size: 1000px;
+}
+
+i:hover{
+    color: rgb(83, 81, 81);
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .div-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-wall{
+        height: 100%;
+    }
+    .div-content{
+        width: 60vw;
+        height: 60vh;
+        border: #333 20px solid;
+        background-size: cover;
+        background-image: url(/src/img/dungeon.gif);
+    }
+
+    .game img{
+        display: none;
+    }
+    
+    .screen{
+        background-image:url(/src/img/caballero.png);
+        background-color: #3a6150;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .div-content{
+        display: none;
+    }
+
+    .lamp-responsive{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        position: absolute;
+    }
+
+    .light{
+        overflow: auto;
+        height: 80%;
+    }
+
+
+    .light-content2{
+        display: block;
+    }
+       
+    .light-content3{
+        display: block;
+    }
+       
+    .light-content4{
+        display: block;
+    }
+    
+    .light-content5{
+        display: block;
+    }
+    
+    .light-content6{
+        display: block;
+    }
+    
+    .light-content7{
+        display: block;
+    }
+    
+    .light-content8{
+        display: block;
+    }
+    
+    .cards-lights{
+        margin-left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: #D9D9D9;
+        border: solid 3px black;
+        border-radius: 5px;
+    }
+}
