@@ -214,10 +214,14 @@ body{
     margin-left: 10%;
 }
 
+.light h3{
+    font-size: 1.3vw;
+    font-weight: bold;
+}
 
 .light p{
     padding: 1%;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     font-weight: bold;
     margin: 10px;
 }
@@ -303,6 +307,10 @@ i:hover{
         font-size: 5vw;
     }
 
+    .light h3{
+        font-size: 6vw;
+        font-weight: bold;
+    }
 
     .light-content2{
         margin-top: 2%;
