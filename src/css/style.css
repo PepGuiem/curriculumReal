@@ -270,6 +270,18 @@ i:hover{
         background-image:url(/src/img/caballero.png);
         background-color: #3a6150;
     }
+
+    .div-content-onlyCurriculum  p{
+        width: 95%;
+        margin-left: 0;
+        font-size: 0.6vw;
+    }
+
+    .div-content-onlyCurriculum .sections div p{
+        width: 95%;
+        margin-left: 0;
+        font-size: 0.6vw;
+    }
 }
 
 @media only screen and (max-width: 768px) {
