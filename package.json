@@ -4,6 +4,6 @@
     "start": "parcel src/index.html"
   },
   "dependencies": {
-    "parcel": "^2.10.2"
+    "parcel": "^2.11.0"
   }
 }

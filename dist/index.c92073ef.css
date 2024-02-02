@@ -191,7 +191,7 @@ body {
 
 .light {
   text-align: center;
-  background-color: #fbff04af;
+  background-color: #fbff04ce;
   border: 3px solid #ff0;
   border-radius: 5px;
   width: 80%;
@@ -200,10 +200,15 @@ body {
   display: block;
 }
 
+.light h3 {
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
 .light p {
   margin: 10px;
   padding: 1%;
-  font-size: 70%;
+  font-size: 1.1vw;
   font-weight: bold;
 }
 
@@ -223,7 +228,7 @@ i:hover {
   color: #535151;
 }
 
-@media only screen and (width >= 1440px) {
+@media only screen and (width >= 1440px) and (height >= 1100px) {
   .div-principal {
     justify-content: center;
     align-items: center;
@@ -250,9 +255,20 @@ i:hover {
     background-color: #3a6150;
     background-image: url("caballero.b28097a7.png");
   }
+
+  .div-content-onlyCurriculum p, .div-content-onlyCurriculum .sections div p {
+    width: 95%;
+    margin-left: 0;
+    font-size: .6vw;
+  }
 }
 
 @media only screen and (width <= 768px) {
+  .div-principal {
+    flex-direction: column;
+    display: flex;
+  }
+
   .div-content {
     display: none;
   }
@@ -260,6 +276,7 @@ i:hover {
   .lamp-responsive {
     text-align: center;
     flex-direction: row;
+    justify-content: center;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -267,11 +284,28 @@ i:hover {
   }
 
   .light {
+    width: 80%;
     height: 80%;
+    font-size: 2vw;
     overflow: auto;
   }
 
-  .light-content2, .light-content3, .light-content4, .light-content5, .light-content6, .light-content7, .light-content8 {
+  .light p {
+    font-size: 2vw;
+  }
+
+  .light div {
+    margin-top: 3%;
+    font-size: 5vw;
+  }
+
+  .light h3 {
+    font-size: 6vw;
+    font-weight: bold;
+  }
+
+  .light-content2 {
+    margin-top: 2%;
     display: block;
   }
 
@@ -282,6 +316,31 @@ i:hover {
     width: 80%;
     height: 80%;
     margin-left: 10%;
+  }
+
+  .dropdown {
+    text-align: center;
+    width: 20%;
+    margin-top: 2%;
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    padding-top: 0;
+    display: flex;
+  }
+
+  .dropdown .dropdown-content {
+    text-align: center;
+    border: 0;
+    height: 170%;
+    display: block;
+  }
+
+  .dropdown-content a img {
+    opacity: 1;
+    height: 70%;
   }
 }
 

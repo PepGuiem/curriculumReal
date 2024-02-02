@@ -51,6 +51,16 @@
   height: 80%;
 }
 
+.div-content-onlyCurriculum .sections div img {
+  margin-left: 0;
+}
+
+.div-content-onlyCurriculum .sections div p {
+  width: 95%;
+  margin-left: 0;
+  font-size: .9vw;
+}
+
 .move-in-onlyCurriculum {
   justify-content: space-between;
   width: 100%;
