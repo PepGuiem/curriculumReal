@@ -98,8 +98,16 @@ document.getElementById("only-curriculum").addEventListener("click", function(){
     displayOnlyCurriculum();
 });
 
+document.getElementById("only-curriculum").addEventListener("keypress", function(){
+    displayOnlyCurriculum();
+});
+
 
 document.querySelector(".home").addEventListener("click", function(){
+    undisplayGame();
+});
+
+document.querySelector(".home").addEventListener("keypress", function(){
     undisplayGame();
 });
 
@@ -124,7 +132,40 @@ document.getElementById("back").addEventListener("click", function(){
     }
 });
 
+document.getElementById("back").addEventListener("keypress", function(){
+    pageCurriculum--;
+    if(pageCurriculum < 0){
+        principal.classList.toggle("desactive");
+        principal2.classList.toggle("desactive");
+        onlyCurriculun.classList.toggle("active");
+        principal.classList.toggle("active");
+        principal2.classList.toggle("active");
+        onlyCurriculun.classList.toggle("desactive");
+        pageCurriculum = 0;
+        controladorToggle++;
+    }else if(pageCurriculum == 0){
+        curriculum1.style.display = "block";
+        curriculum2.style.display = "none";
+    } else if(pageCurriculum == 1){
+        curriculum2.style.display = "block";
+        curriculum3.style.display = "none";
+        next.style.display = "block";
+    }
+});
+
 next.addEventListener("click", function(){
+    pageCurriculum++;
+    if(pageCurriculum == 1){
+        curriculum1.style.display = "none";
+        curriculum2.style.display = "block";
+    }else if(pageCurriculum == 2){
+        curriculum2.style.display = "none";
+        curriculum3.style.display = "block";
+        next.style.display = "none";
+    }
+});
+
+next.addEventListener("keypress", function(){
     pageCurriculum++;
     if(pageCurriculum == 1){
         curriculum1.style.display = "none";
@@ -213,6 +254,18 @@ document.querySelector(".next-level").addEventListener("click", function(){
 });
 
 document.querySelector(".back-game").addEventListener("click", function(){
+    contexto.clearRect(0, 0, tablero.width, tablero.height);
+    level = level - 1;
+    if(level == 0){
+        undisplayGame();
+        level = 1;      
+    }else{
+        whoLevelIts();
+        pintarTablero();
+    }
+});
+
+document.querySelector(".back-game").addEventListener("keypress", function(){
     contexto.clearRect(0, 0, tablero.width, tablero.height);
     level = level - 1;
     if(level == 0){

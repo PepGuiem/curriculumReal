@@ -98,7 +98,7 @@ body {
   margin-top: -35px;
   padding-top: 35px;
   transition: height .5s ease-in;
-  display: block;
+  display: none;
   position: absolute;
   box-shadow: 0 8px 16px #0003;
 }

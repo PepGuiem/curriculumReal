@@ -103,7 +103,7 @@ body{
 }
 .dropdown-content {
     padding-top: 35px;
-    display: block;
+    display: none;
     height: 0;
     position: absolute;
     background-color: var(--networks-color);
@@ -121,6 +121,7 @@ body{
 }
 
 .dropdown .dropdown-content.active {
+    display: block;
     text-align: center;
     height: 170%;
     display: block;
