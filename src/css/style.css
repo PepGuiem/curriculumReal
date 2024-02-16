@@ -255,12 +255,11 @@ i:hover{
     .div-wall{
         height: 100%;
     }
+
     .div-content{
         width: 60%;
         height: 60%;
         border: #333 20px solid;
-        background-size: cover;
-        background-image: url(/src/img/dungeon.webp);
     }
 
     .game img{
