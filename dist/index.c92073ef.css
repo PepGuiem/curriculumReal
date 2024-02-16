@@ -162,8 +162,6 @@ body {
 }
 
 .screen {
-  background-image: url("dungeon.d7506da6.webp");
-  background-size: cover;
   border: 3px solid #000;
   border-radius: 10px;
   justify-content: center;
