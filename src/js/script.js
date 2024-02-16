@@ -1,3 +1,4 @@
+
 const caballero = new Image();
 const caballeroRight = new Image();
 const caballeroLeft = new Image();
