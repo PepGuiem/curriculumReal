@@ -162,7 +162,7 @@ body {
 }
 
 .screen {
-  background-image: url("dungeon.6fce9640.gif");
+  background-image: url("dungeon.9f76c2cb.png");
   background-size: cover;
   border: 3px solid #000;
   border-radius: 10px;
@@ -240,7 +240,7 @@ i:hover {
   }
 
   .div-content {
-    background-image: url("dungeon.6fce9640.gif");
+    background-image: url("dungeon.9f76c2cb.png");
     background-size: cover;
     border: 20px solid #333;
     width: 60vw;
