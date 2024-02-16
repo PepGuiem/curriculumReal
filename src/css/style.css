@@ -256,8 +256,8 @@ i:hover{
         height: 100%;
     }
     .div-content{
-        width: 60vw;
-        height: 60vh;
+        width: 60%;
+        height: 60%;
         border: #333 20px solid;
         background-size: cover;
         background-image: url(/src/img/dungeon.webp);
