@@ -1,8 +1,7 @@
 /*
-  content-encoding: gzip
-  cache-control: public, max-age=31536000
+  Cache-Control: max-age=31536000
 
 /*.html
-  cache-control: public, max-age=3600
+  Cache-Control: max-age=3600
   
 
