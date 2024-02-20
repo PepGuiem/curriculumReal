@@ -1,6 +1,11 @@
-/*.html
-  cache-control: public, max-age=3600
-  
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+  cache-control = '''
+  max-age=31536000  
+
 /*
   content-encoding: gzip
   cache-control: public, max-age=31536000
